@@ -1,0 +1,201 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page{
+    
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    background: url(/WhatsApp\ Image\ 2024-06-20\ at\ 12.33.12_047f7898.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+header{
+    width: 100%;
+    background-color: white;
+
+}
+header nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #06d001;
+}
+header nav h1{
+    font-size: 35px;
+}
+nav ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+nav ul li a:hover{
+    color: #06d001;
+}
+.icon i{
+    padding: 10px;
+    font-size: 30px;
+}
+.bur i{
+    display: none;
+    font-size: 30px;
+}
+.page .next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page .next .con{
+    color: #06d001;
+    margin: 100px;
+    
+}
+.page .next .con p{
+    color: orange;
+    font-size: 20px;
+    font-weight: 600;
+}
+.page .next .con h1{
+    font-weight: 800;
+    font-size: 60px;
+    width: 100%;
+}
+.page .next .boot{
+    width: 40%
+}
+.next .con .bot{
+    display: flex;
+    position: relative;
+    width: 100%
+    
+}
+.next .con .bot input{
+    border-color: orange;
+    padding: 12px 20px;
+    border-radius: 20px;
+    width: 70%;
+}
+.next .con .bot button{
+    position: absolute;
+    left: 48.05%;
+    padding: 13px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #06d001;
+}
+.page-2{
+    width: 100%;
+    position: relative;
+   }  
+   .boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}                             
+.page-2 .box{
+  width: 250px;
+  height: 250px;
+  /* border: 1px solid; */
+  border-radius: 20px;
+  background-color: whitesmoke;
+  margin:10% 25px
+}
+.box i{
+    border: 1px solid;
+    width: 40%;
+    height: 40%;
+    font-size: 50px;
+    border-radius: 50px;
+    padding: 20px 0px;
+    margin-top:40px;
+    color: white;
+    background-color: orange;
+}
+.box.a1,.a2,.a3,.a4{
+    text-align: center;
+ }
+ .page-2 .box.a1 h3{
+     padding-top: 40px;
+ }
+ .page-2 .box.a2 h3{
+     padding-top: 40px;
+ }.page-2 .box.a3 h3{
+     padding-top: 40px;
+ }
+ .page-2 .box.a4 h3{
+     padding-top: 40px;
+ }
+
+@media(max-width:990px){
+    nav ul{
+        display: none;
+    }
+    .icon i{
+        display: none;
+    }
+    .bur i{
+        display: block;
+    }
+    .page-2 .box{
+        width: 220px;
+        height: 250px;
+        border: 1px solid;
+        border-radius: 20px;
+        background-color: whitesmoke;
+        margin:10% 20px
+      }
+      .box i{
+        /* border: 1px solid; */
+        width: 40%;
+        height: 30%;
+        font-size: 40px;
+        border-radius: 50px;
+        padding: 15px 0px;
+        margin-top:15px;
+        color: white;
+        background-color: orange;
+    }
+}
+@media(max-width:560px){
+    .page .next .con{
+        font-size: 50%;
+
+    }
+    .page .next{
+        display: flex;
+        flex-direction: column;
+    }
+    .page .next .con h1{
+        font-size: 300%;
+    }
+    .background .content{
+        top: 100px;
+    }
+    .boxes{
+        flex-direction: column;
+        margin-top: 300px;
+        padding: 5px 0px;
+    }
+    .page-2 .box{
+        width: 300px;
+        height: 250px;
+    }    
+    .cont .menu{
+        flex-direction: column;
+
+    }
+
+}
